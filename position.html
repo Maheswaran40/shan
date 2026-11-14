@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+      margin: 0px;
+    }
+    nav{
+      display: flex;
+      background-color: aqua;
+      height: 120px;
+      /* justify-content: ; horizontal alignment, it works only display-flex */ 
+      /* align-items: ; vertical alignment it works only display-flex*/
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+    #logo{
+      background-color: rgb(117, 16, 212);
+      border-radius: 100%;
+    }
+    h1{
+      height: 200px;
+      background-color: red;
+    }
+    #navlink{
+      width: 200px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .parent{
+      height: 400px;
+      background-color: rgb(226, 51, 245);
+      display: grid;
+      row-gap: 20px;
+      column-gap: 40px;
+      grid-template-columns: repeat(4,1fr);
+    }
+    .child1,.child2,.child3,.child4{
+      background-color: yellow;
+    }
+
+
+    @media (max-width:425px) {
+      .child1,.child2,.child3,.child4{
+      background-color: rgb(255, 0, 0);
+    }
+      .parent{
+      grid-template-columns: 1fr;
+    }
+    #navlink{
+      display: none;
+    }
+    }
+
+     @media (min-width:426px) and (max-width:768px) {
+      .child1,.child2,.child3,.child4{
+      background-color: rgb(13, 255, 0);
+    }
+    .parent{
+      grid-template-columns: repeat(2,1fr);
+    }
+    }
+
+  </style>
+  </head>
+  <body>
+
+    <!-- position , display {flex , grid} , Animation {transition , tranfrom [translate, scale,rotate], @keyframes } , Responsive web design {@media}  -->
+
+    <header>
+      <span>phone</span>
+    </header>
+    <nav>
+      <img src="./image_1024-removebg-preview.png" height="70px" width="70px"
+        id="logo" alt>
+      <form>
+        <input type="search">
+      </form>
+      <div id="navlink">
+        <a href>home</a>
+        <a href>home</a>
+        <a href>home</a>
+        <a href>home</a>
+        <a href>home</a>
+      </div>
+    </nav>
+
+
+    <div class="parent">
+      <div class="child1">1</div>
+      <div class="child2">2</div>
+      <div class="child3">3</div>
+      <div class="child4">4</div>
+
+    </div>
+
+  </body>
+</html>
