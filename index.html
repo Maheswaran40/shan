@@ -1,13 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    h1{
+      background-color: red;
+      color: yellow;
+      height: 300px;
+      width: 300px;
+      border-radius: 100%;
+      /* transition: duration timing-function delay ; */
+      transition: 1s linear;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-  <h1>welcome to github</h1>
-  
-</body>
+      /* transition-duration: 3s; */
+      /* transition-timing-function: linear; */
+      /* transition-delay: 3s; */
+      /* animation: name duration timing-function delay iteration-count direction ; */
+      animation: move 10s linear infinite ;
+    }
+    h1:hover{
+      /* background-color: yellow; */
+      /* color: red; */
+      /* transform: translateY(50px); */
+      /* transform: scale(0.7); */
+      /* transform: rotateZ(180deg); */
+
+    }
+
+    /* @keyframes move {
+        from{
+          transform: rotateZ(0deg);
+        }
+        to{
+          transform: rotateZ(3600deg);
+        }
+    } */
+
+
+    @keyframes move {
+      0%{
+        background-color: red;
+      }
+      25%{
+        
+        background-color: yellow;
+      }
+      50%{
+        background-color: blue;
+        
+      }
+      75%{
+        background-color: green;
+        
+      }
+      100%{
+        background-color: violet;
+
+      }
+    }
+
+
+  </style>
+  </head>
+
+  <body>
+
+    <h1>heading</h1>
+
+  </body>
 </html>
